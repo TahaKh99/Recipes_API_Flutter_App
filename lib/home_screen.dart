@@ -117,6 +117,8 @@ class _HomeScreenState extends State<HomeScreen> {
     }
   }
 
+  
+  // test function to try load recipes from local database sqlite 
   Future<List<dynamic>> loadSavedRecipes() async {
     try {
       final recipes = await RecipeDatabase.getRecipes();
